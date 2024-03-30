@@ -94,9 +94,8 @@ For this workshop, our goal is to use an example of RGB images from one experime
 
 > Download data example:
 
-* **Download:** [EX1_RGB.tif](https://drive.google.com/open?id=1S9MyX12De94swjtDuEXMZKhIIHbXkXKt)
-* **Download:** [EX_DSM0.tif](https://drive.google.com/open?id=1lrq-5T6x_GrbkCtpDSDiX1ldvSwEBFX-)
-* **Download:** [EX_DSM1.tif](https://drive.google.com/open?id=1q_H4Ef1f1yQJOPtkVMJfcb2SvHcxJ3ya)
+* **Download:** [RGB orthomosaics](https://drive.google.com/file/d/1amEezZ1M2fNUkyXunHpl-w919qUWWDY_/view)
+* **Download:** [DSM orthomosaics](https://drive.google.com/file/d/1rRKW0XWOzVe2h6qADadBGw5hchEGzjz2/view)
 
 <br />
     
@@ -125,8 +124,8 @@ For this workshop, our goal is to use an example of RGB images from one experime
 
 > FIELDimageR-QGIS allows drawing the plot shape file using the function **fieldShape** at the **Processing Toolbox > R > FIELDimageR > fieldShape** to creat a basic *grid_shapefile*. 
 
-* **Download field data example here:** [fieldData.csv](https://drive.google.com/file/d/1elAOEg-tw_zMQuPnZT5MTwWmrpB-sYSv/view?usp=sharing)
-* **Download fieldMap matrix with plots ID example here:** [fieldMap.csv](https://drive.google.com/file/d/1lFqZFmaXqzk3UqoN5VH_lOLRilzB6K_d/view?usp=sharing)
+* **Download field data example here:** [fieldData.csv]()
+* **Download fieldMap matrix with plots ID example here:** [fieldMap.csv]()
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_6a.jpg">
