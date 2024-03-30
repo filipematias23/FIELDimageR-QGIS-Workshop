@@ -46,8 +46,9 @@
 
 > Start the pipeline by installing the software:
 
-1. [R](https://www.r-project.org/) 
-2. [QGIS](https://qgis.org/en/site/).
+1. [R](https://www.r-project.org/)
+2. [RStudio](https://posit.co/download/rstudio-desktop/)
+3. [QGIS](https://qgis.org/en/site/)
 
 <br />
 
@@ -262,11 +263,147 @@ For this workshop, our goal is to use an example of RGB images from one experime
 ---------------------------------------------
 ### Saving output files
 
+> Before saving the output, let´s join all data in one file at:
+
+**`Layers Sidebar > Right mouse click on the layer containing the polygons > Properties > Joins > Add the layer you want to join based  on the columns name`**
+
 > Saving shapefiles (e.g., grids, points, polygons, etc.):
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_32.jpg">
 </p>
+
+<br />
+
+[Menu](#menu)
+
+<div id="p11" />
+
+---------------------------------------------
+### Traits heritability using R
+
+> Open **RStudio** in your computer or launch the **Binder** button to open a virtual RStudio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/filipematias23/FIELDimageR.Extra-Workshop-02.git/main?urlpath=rstudio)
+
+> The following code is an example how to calculate adjusted means and heritability in a simple and fast way. For instance, the same model was evaluated twice, the first with genotyped with random effect to calculate heritability (*package [lme4]( https://cran.r-project.org/web/packages/lme4/index.html)*) and the second as fixed effect (*function lm*) to calculate the adjusted means using the *package [emmeans]( https://cran.r-project.org/web/packages/emmeans/)*. The adjusted means will be used for further statistical analysis in this tutorial. 
+
+```r
+############################################
+### FIELDimageR: Plant Breeding Pipeline ###
+############################################
+
+### Install Packages ###
+requiredPackages = c("devtools","sf","terra","ggplot2","DescTools","lme4","emmeans","reshape2","car","plyr","factoextra","ggrepel","agricolae","corrplot","RStoolbox","gridExtra")
+for(p in requiredPackages){
+  if(!require(p,character.only = TRUE)) install.packages(p)
+  library(p,character.only = TRUE)
+}
+devtools::install_github("filipematias23/FIELDimageR")
+
+### Necessary packages ###
+library(FIELDimageR)
+library(sf)
+library(terra)
+library(ggplot2)
+library(DescTools)
+library(lme4)
+library(emmeans)
+library(reshape2)
+library(car)
+library(plyr)
+library(factoextra)
+library(ggrepel)
+library(agricolae)
+library(corrplot)
+library(RStoolbox)
+library(gridExtra)
+
+#########################
+### Evaluating Traits ###
+#########################
+
+### Field data collected manually ###
+Data <- 
+Data$RANGE<-as.factor(Data$RANGE)
+Data$ROW<-as.factor(Data$ROW)
+Data$NAME<-as.factor(Data$NAME)
+
+### Mixed model: getting adjusted means and heritability (H2) ###
+Trait<-c("MAT_DAY","HT","DH","LODG","YLD")
+H2.AG<-NULL
+for(t in 1:length(Trait)){
+  Data1<-droplevels(Data[!is.na(Data[,colnames(Data)==Trait[t]]),])
+  # mod<-lmer(eval(parse(text = paste(Trait[t],"~RANGE+ROW+(1|NAME)",sep=""))),data = Data1)
+  mod<-lmer(eval(parse(text = paste(Trait[t],"~(1|NAME)",sep=""))),data = Data1)
+  Var1<-as.data.frame(VarCorr(mod))$vcov
+  names(Var1)<-as.data.frame(VarCorr(mod))$grp
+  H2.AG<-rbind(H2.AG,data.frame(Trait=Trait[t],
+                          H2=round(c(Var1[1]/sum(Var1[1],
+                                           Var1[2]/2 #2 replicates
+                          )),3)
+                          ))
+  # mod<-lm(eval(parse(text = paste(Trait[t],"~RANGE+ROW+NAME",sep=""))),data = Data1)
+  mod<-lm(eval(parse(text = paste(Trait[t],"~NAME",sep=""))),data = Data1)
+  Adj.Mean<-emmeans(mod, ~ NAME)
+  if(t==1){
+    Pheno.AG<-as.data.frame(Adj.Mean)[,c(1,2)]
+  }
+  if(t!=1){
+    Pheno.AG<-merge(Pheno.AG,as.data.frame(Adj.Mean)[,c(1,2)],by="NAME")
+  }
+}
+colnames(Pheno.AG)<-c("NAME",Trait)
+head(Pheno.AG)
+
+### Agronomical traits heritability ###
+ggplot(data = H2.AG, 
+       aes(x = Trait,
+           y = H2*100,
+           fill=as.factor(Trait))) +
+  geom_bar(stat="identity", position = "dodge") +
+  scale_fill_grey(start=0.2, end=0.8)+
+  ylim(c(0,100))+
+  labs(y="H2 (%)",
+       x="", 
+       fill="Agronomical Traits") +
+  geom_text(aes(label=paste(H2*100,"%")),size=5, position=position_dodge(width=0.9), vjust=-0.25)+
+  theme_bw()+
+  theme(legend.position = "right",
+        legend.direction = "vertical",
+        legend.text = element_text(color="black",size=18),
+        legend.title = element_text(color="black",size=18),
+        axis.text.y = element_text(color="black",size=18),
+        axis.title = element_text(color="black",size=18),
+        axis.text.x = element_blank(),
+        axis.ticks.x=element_blank(),
+        strip.text = element_text(color="black",size=18),
+        strip.background = element_rect(fill="white")) 
+```
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/filipematias23/images/master/readme/BF_9a.jpeg" width="80%" height="80%">
+</p>
+
+<br />
+
+[Menu](#menu)
+
+<div id="p12" />
+
+---------------------------------------------
+### Correlation](#p12)
+
+
+
+<br />
+
+[Menu](#menu)
+
+<div id="p13" />
+  
+---------------------------------------------
+### Linear regression
+
+
 
 <br />
 
