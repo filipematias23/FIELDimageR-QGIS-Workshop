@@ -51,6 +51,8 @@
 
 <br />
 
+> Videos:
+
 * **Video Tutorial 01:** FIELDimageR Installation [https://youtu.be/vEp-iUpJCIQ](https://youtu.be/vEp-iUpJCIQ)
 
 * **Video Tutorial 02:** FIELDimageR-QGIS Installation [https://youtu.be/1ugwjOSe_Qo](https://youtu.be/1ugwjOSe_Qo)
@@ -89,7 +91,7 @@ For this workshop, our goal is to use an example of RGB images from one experime
 ---------------------------------------------
 ### Loading mosaics and visualizing using QGIS
 
-> First of all, open QGIS ... There are many ways to create or start a **New Project** in QGIS. The image below highlights some examples:
+> Open QGIS ... There are many ways to create or start a **New Project** in QGIS. The image below highlights some examples:
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_29a.jpg">
