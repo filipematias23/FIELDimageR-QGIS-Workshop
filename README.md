@@ -91,6 +91,14 @@ For this workshop, our goal is to use an example of RGB images from one experime
 ---------------------------------------------
 ### Loading mosaics and visualizing using QGIS
 
+> Download data example:
+
+* **Download:** [EX1_RGB.tif](https://drive.google.com/open?id=1S9MyX12De94swjtDuEXMZKhIIHbXkXKt)
+* **Download:** [EX_DSM0.tif](https://drive.google.com/open?id=1lrq-5T6x_GrbkCtpDSDiX1ldvSwEBFX-)
+* **Download:** [EX_DSM1.tif](https://drive.google.com/open?id=1q_H4Ef1f1yQJOPtkVMJfcb2SvHcxJ3ya)
+
+<br />
+    
 > Open QGIS ... There are many ways to create or start a **New Project** in QGIS. The image below highlights some examples:
 
 <p align="center">
