@@ -107,7 +107,7 @@ For this workshop, our goal is to use an example of RGB images from one experime
 
 <br />
 
-> Uploading files (e.g., raster, table, shapefiles, etc.) to QGIS is very simple:
+> Upload the raster **MOSAIC/2_40.tif** to QGIS:
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_30.jpg">
@@ -124,8 +124,16 @@ For this workshop, our goal is to use an example of RGB images from one experime
 
 > FIELDimageR-QGIS allows drawing the plot shape file using the function **fieldShape** at the **Processing Toolbox > R > FIELDimageR > fieldShape** to creat a basic *grid_shapefile*. 
 
+<br />
+
 * **Download field data example here:** [fieldData.csv](https://github.com/filipematias23/FIELDimageR-QGIS-Workshop/blob/main/fieldData.csv)
 * **Download fieldMap matrix with plots ID example here:** [fieldMap.csv](https://github.com/filipematias23/FIELDimageR-QGIS-Workshop/blob/main/fieldMap.csv)
+
+<br />
+
+> This example has **10 rows** and **14 columns**:
+
+<br />
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_6a.jpg">
@@ -189,6 +197,10 @@ For this workshop, our goal is to use an example of RGB images from one experime
 
 * [**Download EX_DSM0.tif**](https://drive.google.com/open?id=1lrq-5T6x_GrbkCtpDSDiX1ldvSwEBFX-)
 * [**Download EX_DSM1.tif**](https://drive.google.com/open?id=1q_H4Ef1f1yQJOPtkVMJfcb2SvHcxJ3ya) 
+
+<br />
+
+> Upload the raster **DSM/1_30_dsm.tif** (soil base) and **DSM/3_70_dsm.tif** to QGIS:
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_19.jpg" width="70%" height="70%">
