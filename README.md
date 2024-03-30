@@ -15,7 +15,7 @@
 
 [Step 2. Orthomosaic using WebODM](#p2)
 
-[Step 3. Loading mosaics and visualizing](#p3)
+[Step 3. Loading mosaics and visualizing using QGIS](#p3)
 
 [Step 4. Plot grid-shapefile](#p4)
 
@@ -87,9 +87,9 @@ For this workshop, our goal is to use an example of RGB images from one experime
 <div id="p3" />
 
 ---------------------------------------------
-### Loading mosaics and visualizing
+### Loading mosaics and visualizing using QGIS
 
-> There are many ways to create or start a **New Project** in QGIS. The image below highlights some examples:
+> First of all, open QGIS ... There are many ways to create or start a **New Project** in QGIS. The image below highlights some examples:
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_29a.jpg">
