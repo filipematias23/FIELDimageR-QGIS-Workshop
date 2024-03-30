@@ -141,12 +141,6 @@ For this workshop, our goal is to use an example of RGB images from one experime
 
 <br />
 
-<p align="center">
-  <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_8.jpg">
-</p>
-
-<br />
-
 > **Editing the plot shapefile:** QGIS has great tools to edit shapefiles and plots.
 
 * Activate it at **View > Toolbars > Advanced Digitizing Toolbar**
