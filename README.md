@@ -187,8 +187,8 @@ For this workshop, our goal is to use an example of RGB images from one experime
 
 > The plant height can be estimated with the function **`fieldHeight`** by calculating the Canopy Height Model (CHM) and biomass by calculating Canopy Volume Model (CVM).
 
-* [**Download EX_DSM0.tif**](https://drive.google.com/open?id=1lrq-5T6x_GrbkCtpDSDiX1ldvSwEBFX-))
-* [**Download EX_DSM1.tif**](https://drive.google.com/open?id=1q_H4Ef1f1yQJOPtkVMJfcb2SvHcxJ3ya)) 
+* [**Download EX_DSM0.tif**](https://drive.google.com/open?id=1lrq-5T6x_GrbkCtpDSDiX1ldvSwEBFX-)
+* [**Download EX_DSM1.tif**](https://drive.google.com/open?id=1q_H4Ef1f1yQJOPtkVMJfcb2SvHcxJ3ya) 
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_19.jpg" width="70%" height="70%">
