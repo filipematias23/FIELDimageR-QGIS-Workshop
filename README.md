@@ -1,6 +1,6 @@
 ## [FIELDimageR-QGIS-Workshop](https://github.com/filipematias23/FIELDimageR-QGIS-Workshop)
 
-> Workshop presenting the [FIELDimageR-QGIS](https://github.com/filipematias23/FIELDimageR-QGIS) tutorial and phenomics application on plant breeding.
+> Workshop presenting [FIELDimageR-QGIS](https://github.com/filipematias23/FIELDimageR-QGIS) pipeline and examples of remote sensing data applications on plant breeding experiments.
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_logo.jpg" width="50%" height="50%">
