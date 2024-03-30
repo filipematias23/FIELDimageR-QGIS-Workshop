@@ -17,19 +17,25 @@
 
 [Step 3. Loading mosaics and visualizing](#p3)
 
-[Step 4. Plot Grid Shapefile](#p4)
+[Step 4. Plot grid-shapefile](#p4)
 
 [Step 5. Building vegetation indices](#p5)
 
 [Step 6. Estimating plant height and biomass](#p6)
 
-[Step 7. Canopy Evaluation](#p7) 
+[Step 7. Canopy evaluation](#p7) 
 
-[Step 8. Extracting Data](#p8)
+[Step 8. Extracting data per plot](#p8)
 
 [Step 9. Stand Count](#p9)
 
 [Step 10. Saving output files](#p10)
+
+[Step 11. Traits heritability using R](#p11)
+
+[Step 12. Correlation](#p12)
+
+[Step 13. Linear regression](#p13)
 
 [Contact](#contact)
 
@@ -37,6 +43,11 @@
 
 ---------------------------------------------
 ### Installation
+
+> Start the pipeline by installing the software:
+
+1. [R](https://www.r-project.org/) 
+2. [QGIS](https://qgis.org/en/site/).
 
 <br />
 
