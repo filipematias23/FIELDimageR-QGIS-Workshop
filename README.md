@@ -580,8 +580,8 @@ ggplot(DataTotal.Reg,aes(y=Canopy_Are, x=GLI_men)) +
 
 ### Authors
   
-> [Filipe Matias](https://www.linkedin.com/in/filipe-matias-27bab5199/)
-> [Popat Pawar](https://www.linkedin.com/in/dr-popat-pawar-204bb136/)
+* [Filipe Matias](https://www.linkedin.com/in/filipe-matias-27bab5199/)
+* [Popat Pawar](https://www.linkedin.com/in/dr-popat-pawar-204bb136/)
   
 <br />
 
