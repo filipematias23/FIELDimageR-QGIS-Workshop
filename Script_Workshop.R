@@ -9,8 +9,9 @@
 #   if(!require(p,character.only = TRUE)) install.packages(p)
 #   library(p,character.only = TRUE)
 # }
-# devtools::install_github("filipematias23/FIELDimageR.Extra")
-# devtools::install_github("OpenDroneMap/FIELDimageR")
+
+ devtools::install_github("filipematias23/FIELDimageR.Extra")
+ devtools::install_github("OpenDroneMap/FIELDimageR")
 
 ### Necessary packages ###
 library(FIELDimageR.Extra)
