@@ -287,7 +287,7 @@ For this workshop, our goal is to use an example of RGB images from one experime
 ---------------------------------------------
 ### Traits heritability using R
 
-> Open **RStudio** in your computer or launch the **Binder** button to open a virtual RStudio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/filipematias23/FIELDimageR-QGIS-Workshop.git/main?urlpath=RStudio)
+> Open **RStudio** in your computer or launch the **Binder** button to open a virtual RStudio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/filipematias23/FIELDimageR-QGIS-Workshop.git/main?urlpath=rstudio)
 
 > The following code is an example how to calculate adjusted means and heritability in a simple and fast way. For instance, the same model was evaluated twice, the first with genotyped with random effect to calculate heritability (*package [lme4]( https://cran.r-project.org/web/packages/lme4/index.html)*) and the second as fixed effect (*function lm*) to calculate the adjusted means using the *package [emmeans]( https://cran.r-project.org/web/packages/emmeans/)*. The adjusted means will be used for further statistical analysis in this tutorial. 
 
