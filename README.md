@@ -272,7 +272,7 @@ For this workshop, our goal is to use an example of RGB images from one experime
 
 **`Layers Sidebar > Right mouse click on the layer containing the polygons > Properties > Joins > Add the layer you want to join based  on the columns name`**
 
-> Saving shapefiles (e.g., grids, points, polygons, etc.):
+> Save output_info shapefile (all data) as **Data_Total.shp**:
 
 <p align="center">
   <img src="https://github.com/filipematias23/images_FQ/blob/main/readme/qgis_32.jpg">
