@@ -39,7 +39,7 @@ library(gridExtra)
 #########################
 
 ### Field data collected manually ###
-Data <- st_read("Data_Total_2.shp")
+Data <- st_read("Data_Total.shp")
 colnames(Data)
 m1<-mapview(Data, zcol = "Trait", legend = TRUE)
 m2<-mapview(Data, zcol = "Canopy_Are", legend = TRUE)
